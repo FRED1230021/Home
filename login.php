@@ -31,7 +31,7 @@ echo "<script>alert('Invalid username or password');</script>";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>MEDICALIS Health Care System | Registration and Login Portal</title>
+        <title>CBC Health Care System | Registration and Login Portal</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -45,7 +45,7 @@ echo "<script>alert('Invalid username or password');</script>";
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
 
 <div class="card-header">
-<h2 align="center">MEDICALIS Health Care <br>Registration and Login Portal</h2>
+<h2 align="center">CBC Health Care <br>Registration and Login Portal</h2>
 <hr />
     <h3 class="text-center font-weight-light my-4">User Login</h3></div>
                                     <div class="card-body">

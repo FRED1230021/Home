@@ -83,13 +83,13 @@ return true;
 
 
 <div class="form-floating mb-3">
-<input class="form-control" id="email" name="email" type="email" placeholder="phpgurukulteam@gmail.com" required />
+<input class="form-control" id="email" name="email" type="email" placeholder="loickotte99@gmail.com" required />
 <label for="inputEmail">Email address</label>
 </div>
  
 
 <div class="form-floating mb-3">
-<input class="form-control" id="contact" name="contact" type="text" placeholder="1234567890" required pattern="[0-9]{10}" title="10 numeric characters only"  maxlength="10" required />
+<input class="form-control" id="contact" name="contact" type="text" placeholder="123456789" required pattern="[0-9]{9}" title="9 numeric characters only"  maxlength="10" required />
 <label for="inputcontact">Contact Number</label>
 </div>
         

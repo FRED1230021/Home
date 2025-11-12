@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
- <img src="assets/img/element.jpg" alt="Logo" width="60" height="50">
-  <title> MEDICALIS- Welcome</title>
+
+  <title>CBC Health Management System - Welcome</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/element.jpg" rel="element">
-  <link href="assets/img/element.jpg" rel="element">
- 
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,7 +27,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Medilab
@@ -45,14 +44,14 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">info@medicalis.com</a>
-        <i class="bi bi-phone"></i> +237 696671570
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">info@cbchealth.com</a>
+        <i class="bi bi-phone"></i> +237 650120254
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-       
       </div>
     </div>
   </div>
@@ -60,16 +59,15 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-      <img src="assets/img/element.jpg" alt="Logo" width="60" height="50">
 
-      <h1 class="logo me-auto"><a href="index.html">MEDICALIS</a></h1>
+      <h1 class="logo me-auto"><a href="index.html">CBC Health Care</a></h1>
      <!--  Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#element">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.php">About Us</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#departments">Departments</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
@@ -87,18 +85,15 @@
 
       <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
 
-
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="element" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container">
-      <h1>Welcome to MEDICALIS</h1>
+      <h1>Welcome to CBC Health</h1>
       <h2>Leaders in Health care providing</h2>
-    <a href="index2.html" class="video conference-btn scrollto"><span class="d-none d-md-inline">Video</span> Conference</a>
-      
-
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
@@ -111,7 +106,7 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose MEDICALIS?</h3>
+              <h3>Why Choose CBC Health Care?</h3>
               <p>
                 We are experts in health care, having well trained and experience medical practitioners. <br> 
                 Your health remains our priority.
@@ -816,23 +811,49 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Douala -Bomono-Cameroon</p>
+                <p>Douala -Bonaberi-Cameroon</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@medicalis.com</p>
+                <p>info@cbchealthcare.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+237 670-81-13-30</p>
-          <p>+237 696-67-15-70</p>
+                <p>+237 677-02-85-501-427</p>
               </div>
 
             </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
 
           </div>
 
@@ -851,13 +872,13 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>MEDICALIS</h3>
+            <h3>CBC Health Care</h3>
             <p>
               Cameroon <br>
               Douala<br>
             
-              <strong>Phone:</strong> +237 670-81-13-30<br>
-              <strong>Email:</strong> info@medicalis.com<br>
+              <strong>Phone:</strong> +237 677-02-85-26<br>
+              <strong>Email:</strong> info@cbchealthcare.com<br>
             </p>
           </div>
 
@@ -885,10 +906,11 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <p>Subscribe to our newsletter to stay updated on the latest health tips, news, and special offers from MEDICALIS. Our newsletter provides valuable information to help you maintain a healthy lifestyle and stay informed about our services.</p>
+            <p>The newsletters of Mbingo Annex Baptist Hospital are essential communication tools that keep the community informed and connected. They feature updates on medical innovations, inspiring patient stories, and staff achievements. The newsletters also highlight the hospital's community outreach efforts, provide educational articles on health topics, and announce upcoming events. These publications reflect the hospital's commitment to delivering exceptional healthcare and fostering a supportive, informed community.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
+          </div>
 
         </div>
       </div>
@@ -898,7 +920,7 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; 2025 Copyright <strong><span>MEDICALIS</span></strong>. All Rights Reserved
+          &copy; 2024 Copyright <strong><span>CBC Health Care</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -909,10 +931,10 @@
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
