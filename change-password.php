@@ -1,20 +1,19 @@
 <?php session_start();
-include_once('includes/config.php');
-if (strlen($_SESSION['id']==0)) {
+include_once('../includes/config.php');
+if (strlen($_SESSION['adminid']==0)) {
   header('location:logout.php');
   } else{
-//Code for Updation 
  // for  password change   
 if(isset($_POST['update']))
 {
-$oldpassword=$_POST['currentpassword']; 
-$newpassword=$_POST['newpassword'];
-$sql=mysqli_query($con,"SELECT password FROM users where password='$oldpassword'");
+$oldpassword=md5($_POST['currentpassword']); 
+$newpassword=md5($_POST['newpassword']);
+$sql=mysqli_query($con,"SELECT password FROM admin where password='$oldpassword'");
 $num=mysqli_fetch_array($sql);
 if($num>0)
 {
-$userid=$_SESSION['id'];
-$ret=mysqli_query($con,"update users set password='$newpassword' where id='$userid'");
+$adminid=$_SESSION['adminid'];
+$ret=mysqli_query($con,"update admin set password='$newpassword' where id='$adminid'");
 echo "<script>alert('Password Changed Successfully !!');</script>";
 echo "<script type='text/javascript'> document.location = 'change-password.php'; </script>";
 }
@@ -37,7 +36,7 @@ echo "<script type='text/javascript'> document.location = 'change-password.php';
         <meta name="author" content="" />
         <title>Change password | Registration and Login System</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 <script language="javascript" type="text/javascript">
 function valid()
@@ -93,16 +92,14 @@ return true;
 
                     </div>
                 </main>
-          <?php include('includes/footer.php');?>
+          <?php include('../includes/footer.php');?>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+        <script src="../js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/chart-area-demo.js"></script>
-        <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
+        <script src="../js/datatables-simple-demo.js"></script>
     </body>
 </html>
 <?php } ?>
